@@ -1,0 +1,57 @@
+{
+  "name": "reqmetrics",
+  "version": "0.1.0",
+  "description": "Lightweight Express middleware for API request tracking, response-time monitoring, and endpoint analytics.",
+  "main": "src/index.js",
+  "module": "src/index.mjs",
+  "types": "src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.mjs",
+      "require": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/**/*.test.js",
+    "lint": "node --check src/**/*.js examples/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdityaGupta-2006/reqmetrics.git"
+  },
+  "keywords": [
+    "express",
+    "nodejs",
+    "api-monitoring",
+    "request-tracking",
+    "performance-monitoring",
+    "middleware",
+    "analytics",
+    "response-time"
+  ],
+  "author": "Aditya Kumar Gupta",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "peerDependencies": {
+    "express": ">=4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "express": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "express": "^4.21.2",
+    "express5": "npm:express@^5.0.0",
+    "supertest": "^7.0.0"
+  }
+}
